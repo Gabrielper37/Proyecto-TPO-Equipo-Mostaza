@@ -1,0 +1,69 @@
+body {
+    background: white;
+}
+.ContenedorPrincipal {
+    width: 100%;            /* Con estas 2 lineas definimos de ancho hasta donde */
+    max-width: 2196px;      /* se va a mostar contenido */
+    gap: 30px;              /* Distancia entre elementos en general */
+    margin: 30px auto;      /* Centra de manera horizontal los elementos en general */
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Una linea chica para el Aside + Publicidad y buen espacio para el main */
+    grid-template-rows: 1fr 2fr 2fr 1fr 0.5fr; /* Header fino, Main grande, articulos, footer */
+    grid-template-areas:"navegador navegador"
+    "aside main"
+    "publicidad main"
+    "articulo articulo"
+    "pie pie";
+}
+
+.navegador{
+    background-color: blue;
+    position: relative;
+    grid-area: navegador;
+    display: grid;
+}
+
+.FlexNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.FlexNav > a{
+    background-color: red;
+    margin: 5px;
+}
+
+.main{
+    background-color: aqua;
+    position: relative;
+    grid-area: main;
+    display: grid;
+}
+.pie{
+    background-color: red;
+    position: relative;
+    grid-area: pie;
+    display: grid;
+}
+.aside{
+    background-color: blue;
+    position: relative;
+    grid-area: aside;
+    display: grid;
+}
+.publicidad{
+    background-color: yellow;
+    position: relative;
+    grid-area: publicidad;
+    display: grid;
+}
+.articulo{
+    background-color: pink;
+    position: relative;
+    grid-area: articulo;
+    display: grid;
+}
+    
