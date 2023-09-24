@@ -1,9 +1,16 @@
-body {
-    background: white;
+@font-face {
+    font-family:rammstein ;
+    src: url(font/rammstein.ttf);
 }
+
+*{
+    color: white
+}
+
 .ContenedorPrincipal {
     width: 100%;            /* Con estas 2 lineas definimos de ancho hasta donde */
-    max-width: 2196px;      /* se va a mostar contenido */
+    max-width: 1200px;
+    max-height: 1086px;      /* se va a mostar contenido */
     gap: 30px;              /* Distancia entre elementos en general */
     margin: 30px auto;      /* Centra de manera horizontal los elementos en general */
     display: grid;
@@ -14,16 +21,32 @@ body {
     "publicidad main"
     "articulo articulo"
     "pie pie";
+    background: url(img/Back-ground.png) pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
 }
 
-.navegador{
-    background-color: blue;
+.ContenedorPrincipal > .navegador,
+.ContenedorPrincipal > .FlexNav,
+.ContenedorPrincipal > .main,
+.ContenedorPrincipal > .aside,
+.ContenedorPrincipal > .publicidad,
+.ContenedorPrincipal > .articulo,
+.ContenedorPrincipal > .pie{
+    padding: 20px;
+
+}
+
+.ContenedorPrincipal .navegador{
+    background-color: grey;
     position: relative;
     grid-area: navegador;
     display: grid;
 }
 
-.FlexNav{
+.ContenedorPrincipal .FlexNav{
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,36 +55,31 @@ body {
 }
 
 .FlexNav > a{
-    background-color: red;
+    font-family: rammstein;
     margin: 5px;
 }
 
-.main{
-    background-color: aqua;
+.ContenedorPrincipal .main{
     position: relative;
     grid-area: main;
     display: grid;
 }
-.pie{
-    background-color: red;
+.ContenedorPrincipal .pie{
     position: relative;
     grid-area: pie;
     display: grid;
 }
-.aside{
-    background-color: blue;
+.ContenedorPrincipal .aside{
     position: relative;
     grid-area: aside;
     display: grid;
 }
-.publicidad{
-    background-color: yellow;
+.ContenedorPrincipal .publicidad{
     position: relative;
     grid-area: publicidad;
     display: grid;
 }
-.articulo{
-    background-color: pink;
+.ContenedorPrincipal .articulo{
     position: relative;
     grid-area: articulo;
     display: grid;
