@@ -15,7 +15,7 @@
     margin: 30px auto;      /* Centra de manera horizontal los elementos en general */
     display: grid;
     grid-template-columns: 1fr 3fr; /* Una linea chica para el Aside + Publicidad y buen espacio para el main */
-    grid-template-rows: 8fr 1fr 2fr 2fr 1fr 0.5fr; /* Header fino, Main grande, articulos, footer */
+    grid-template-rows: 30vw 5vw 20vw 2vw 10vw 5vw; /* Header fino, Main grande, articulos, footer */
     grid-template-areas: "ShowUpImagen ShowUpImagen"
     "navegador navegador"
     "aside main"
@@ -42,7 +42,9 @@
 .ContenedorPrincipal .ShowUpImagen{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/ShowUp.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    height: 100%;
     position: relative;
     grid-area: ShowUpImagen;
     display: grid;
