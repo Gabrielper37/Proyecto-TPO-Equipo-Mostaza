@@ -17,7 +17,7 @@ body, html {
     position: relative;
 }
 
-.uptxt {
+.uptxt h1 {
     font-family: rammstein;
     text-align: center;
     position: absolute;
@@ -25,6 +25,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 2vw;
 }
 
 .nav {
