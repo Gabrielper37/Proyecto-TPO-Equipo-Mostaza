@@ -8,37 +8,6 @@ body, html {
     text-decoration-line: none;
 }
 
-.flickity-prev-next-button {
-    width: 80px;
-    height: 80px;
-    background: transparent;
-}
-.flickity-prev-next-button:hover{
-      background: transparent;
-}
-.arrow{
-      fill: white;
-}
-  
-.flickity-page-dots {
-    bottom: 30px;
-}
-.dot{
-      width: 30px;
-      height: 4px;
-      opacity: 1;
-      background: rgba(255,255,255,0.5);
-      border: 0 solid white;
-      border-radius: 0;
-}
-      .dot.is-selected{
-        background: #ff0000;
-        border: 0 solid #ff0000; 
-      }
-    
-  
-
-
 .upimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/upimg.jpg");
     height: 50vh;
