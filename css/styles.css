@@ -26,7 +26,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3.5em;
+    font-size: 3em;
     position: absolute;
 }
 
@@ -44,7 +44,7 @@ body, html {
 
 .nav a {
     font-family: rammstein;
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: rgb(255, 0, 0);
     padding: 1%;
     width: fit-content;
