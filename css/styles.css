@@ -10,16 +10,15 @@ body, html {
     margin: 0;
 }
 
+.topiconcont {
+  display: flex;
+  justify-content: center;
+}
 
 .topicon {
-  display: flex;
-  flex-wrap: wrap;
-  position: sticky;
+  position: fixed;
   top: 0;
-  height: fit-content;
   z-index: 1000;
-  justify-content: center;
-  background-color: black;
   text-align: center;
   
 }
@@ -29,7 +28,6 @@ body, html {
   color: white;
   font-size: 3.5em;
   width: fit-content;
-  background-color: black;
 }
 #block{
     margin: 0;
