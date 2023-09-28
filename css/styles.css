@@ -66,7 +66,6 @@ body, html {
     position: relative;
     top: 0;
     width: 100%;
-    background-color: pink;
     justify-content: center;
     align-content: center;
 
@@ -94,14 +93,14 @@ body, html {
 }
 
 .ContenedorHistoria {
-    background-color: grey;
+    background-color: black;
     color: white;
     width: 100%;
     max-width: 1500px;
     /*ancho máximo de la página*/
     /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px;
+
     /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
     /*3 columnas: contenido (con 2 widgets) + sidebar*/
@@ -119,9 +118,10 @@ body, html {
   }
 
   .LogoRammstein{
-    background: url(img\RammsteinLogo.jpg);
     grid-area: LogoRammstein;
-    height: fit-content;
+    max-width: 100%;
+    max-height: fit-content;
+    align-content: center;
   }
 
   .MainHistoria{
