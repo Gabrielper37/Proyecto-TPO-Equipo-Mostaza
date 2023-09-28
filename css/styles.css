@@ -10,7 +10,7 @@ body, html {
     margin: 0;
 }
 
-
+/* Flex Sticky de Rammstein */
 .topicon {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +31,7 @@ body, html {
   width: fit-content;
   background-color: black;
 }
+/* Flex Sticky de Rammstein */
 
 /* .upimg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/upimg.jpg
@@ -61,7 +62,6 @@ body, html {
     width: 100%;
     align-self: center;
 }
-
 .nav {
     display: flex;
     flex-flow: row nowrap;
@@ -70,9 +70,7 @@ body, html {
     width: 100%;
     justify-content: center;
     align-content: center;
-
 }
-
 .nav a {
     font-family: rammstein;
     font-size: 3vw;
@@ -81,13 +79,10 @@ body, html {
     width: fit-content;
     text-align: center;
     text-decoration-line: none;
-   
 }
-
 .nav a:hover {
     background-color: rgba(34, 34, 34, 0.801);
 }
-
 /* Sector Navegador */
 
 .contenedor {   /* En desuso */
@@ -124,7 +119,6 @@ body, html {
     max-height: fit-content;
     align-content: center;
   }
-
   .MainHistoria{
     grid-area: MainHistoria;
   }
