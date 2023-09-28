@@ -54,6 +54,8 @@ body, html {
     
 } */
 
+
+/* Sector Navegador */
 .NavBar{
     grid-area: Navegador;
     width: 100%;
@@ -86,29 +88,25 @@ body, html {
     background-color: rgba(34, 34, 34, 0.801);
 }
 
-.contenedor {
+/* Sector Navegador */
+
+.contenedor {   /* En desuso */
   background-color: black;
   color: white;
   padding: 2px;
 }
 
+
+/* Tiene todo menos el video */
 .ContenedorHistoria {
     background-color: black;
     color: white;
     width: 100%;
     max-width: 1500px;
     /*ancho máximo de la página*/
-    /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-
-    /*nos ahorramos tenes que poner márgenes entre los elementos*/
-
-    /*3 columnas: contenido (con 2 widgets) + sidebar*/
     grid-template-columns: repeat(4, 1fr);
-
-    /*4 filas: header, contenido, widgets, footer*/
     grid-template-rows: repeat(4, auto);
-
     grid-template-areas:
     "Navegador Navegador Navegador Navegador"
     "LogoRammstein LogoRammstein LogoRammstein LogoRammstein"
@@ -116,7 +114,10 @@ body, html {
     "MainHistoria MainHistoria MainHistoria MainHistoria"
     "Pie Pie Pie Pie";
   }
+  /* Tiene todo menos el video */
 
+  /* Logo Rammstein */
+  /* No esta 100% Funcional, manejado principalmente en el html*/
   .LogoRammstein{
     grid-area: LogoRammstein;
     max-width: 100%;
