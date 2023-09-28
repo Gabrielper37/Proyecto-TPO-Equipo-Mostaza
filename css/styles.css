@@ -54,13 +54,19 @@ body, html {
     
 } */
 
+.NavBar{
+    grid-area: Navegador;
+    width: 100%;
+    align-self: center;
+}
+
 .nav {
     display: flex;
     flex-flow: row nowrap;
     position: relative;
     top: 0;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: pink;
     justify-content: center;
     align-content: center;
 
@@ -73,7 +79,7 @@ body, html {
     padding: 1%;
     width: fit-content;
     text-align: center;
-   text-decoration-line: none;
+    text-decoration-line: none;
    
 }
 
@@ -86,3 +92,42 @@ body, html {
   color: white;
   padding: 2px;
 }
+
+.ContenedorHistoria {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    max-width: 1500px;
+    /*ancho máximo de la página*/
+    /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px;
+    /*nos ahorramos tenes que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(4, 1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:
+    "Navegador Navegador Navegador Navegador"
+    "LogoRammstein LogoRammstein LogoRammstein LogoRammstein"
+    "MainHistoria MainHistoria MainHistoria MainHistoria"
+    "MainHistoria MainHistoria MainHistoria MainHistoria"
+    "Pie Pie Pie Pie";
+  }
+
+  .LogoRammstein{
+    background: url(img\RammsteinLogo.jpg);
+    grid-area: LogoRammstein;
+    height: fit-content;
+  }
+
+  .MainHistoria{
+    grid-area: MainHistoria;
+  }
+
+  .Pie{
+    grid-area: Pie;
+  }
