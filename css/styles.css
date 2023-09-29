@@ -93,7 +93,6 @@ a {
   color: red;
 }
 .head p {
-  
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -106,14 +105,12 @@ img {
   width: 100%;
 }
 
-
 .content {
   line-height: 0;
   word-spacing: 0.1em;
   display: inline-block;
   margin: 30px 2% 0 2%;
 }
-
 
 .collumn {
   font-size: 14px;
@@ -130,7 +127,7 @@ img {
   text-align: left;
 }
 
-.collumn  .headline {
+.collumn .headline {
   text-align: center;
   line-height: normal;
   display: block;
@@ -171,14 +168,14 @@ img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .collumn .collumn2{
+  .collumn .collumn2 {
     width: 100%;
   }
-  
+
   .nav a {
     font-size: 7vw;
   }
-  
+
   .topicon a {
     font-size: 10vw;
   }
@@ -189,12 +186,11 @@ img {
   .collumn {
     width: 100%;
   }
- 
-  
+
   .nav a {
     font-size: 7vw;
   }
-  
+
   .topicon a {
     font-size: 10vw;
   }
@@ -204,41 +200,39 @@ img {
 @media only screen and (min-width: 768px) {
   .collumn {
     width: 47%;
-  
-  .nav a {
-    font-size: 7vw;
-  }
-  
-  .topicon a {
-    font-size: 10vw;
-  }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .collumn {
-    width: 47%;
-  }
-  .topicon a {
-    font-size: 4vw;
-  }
-  .nav a {
-    font-size: 4vw;
-  }
-}
+    .nav a {
+      font-size: 7vw;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .collumn {
-    width: 31%;
+    .topicon a {
+      font-size: 10vw;
+    }
+  }
 
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .collumn {
+      width: 47%;
+    }
+    .topicon a {
+      font-size: 4vw;
+    }
+    .nav a {
+      font-size: 4vw;
+    }
   }
-  .topicon a {
-    font-size: 4vw;
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .collumn {
+      width: 31%;
+    }
+    .topicon a {
+      font-size: 4vw;
+    }
+    .nav a {
+      font-size: 4vw;
+    }
   }
-  .nav a {
-    font-size: 4vw;
-  }
- 
-}
 }
