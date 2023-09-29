@@ -85,7 +85,7 @@ html {
   );
 }
 
-p {
+.head p {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   margin-bottom: 20px;
@@ -180,5 +180,13 @@ p {
     font-size: 60px;
     line-height: 54px;
     overflow: hidden;
+  }
+  
+  .nav a {
+    font-size: 7vw;
+  }
+  
+  .topicon a {
+    font-size: 10vw;
   }
 }
