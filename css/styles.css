@@ -168,7 +168,7 @@ img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .collumn .collumn2 {
+  .collumn {
     width: 100%;
   }
 
@@ -200,7 +200,7 @@ img {
 @media only screen and (min-width: 768px) {
   .collumn {
     width: 47%;
-
+}
     .nav a {
       font-size: 7vw;
     }
@@ -235,4 +235,4 @@ img {
       font-size: 4vw;
     }
   }
-}
+
