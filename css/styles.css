@@ -70,6 +70,8 @@ body, html {
     width: 100%;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .nav a {
     font-family: rammstein;
