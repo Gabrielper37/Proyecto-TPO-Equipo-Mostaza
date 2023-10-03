@@ -177,24 +177,24 @@ footer {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: max-content;
   padding: 40px 20px;
- bottom: 0;
- position: relative;
+  bottom: 0;
+  position: relative;
 }
 
-footer .footer_columna{
-  color:#fff;
+footer .footer_columna {
+  color: #fff;
   width: 30%;
-
 }
-footer .footer_columna p{
+footer .footer_columna p {
   font-weight: 300;
-  ;
 }
 
-footer  li,a, p { 
+footer li,
+a,
+p {
   text-decoration: none;
   color: #fff;
   list-style-type: none;
@@ -206,20 +206,19 @@ footer  li,a, p {
   background-color: #2e2e2e;
   top: 0;
 }
-.footer_linea p{
+.footer_linea p {
   background-color: #2e2e2e;
   font-weight: 300;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
-  margin: 0;   
+  margin: 0;
 }
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
   #block1 {
     display: none;
   }
@@ -243,8 +242,6 @@ footer  li,a, p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-
   .collumn {
     width: 100%;
   }
@@ -262,39 +259,38 @@ footer  li,a, p {
 @media only screen and (min-width: 768px) {
   .collumn {
     width: 47%;
+  }
+  .nav a {
+    font-size: 7vw;
+  }
+
+  .topicon a {
+    font-size: 10vw;
+  }
 }
-    .nav a {
-      font-size: 7vw;
-    }
 
-    .topicon a {
-      font-size: 10vw;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .collumn {
+    width: 47%;
   }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .collumn {
-      width: 47%;
-    }
-    .topicon a {
-      font-size: 4vw;
-    }
-    .nav a {
-      font-size: 4vw;
-    }
+  .topicon a {
+    font-size: 4vw;
   }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .collumn {
-      width: 31%;
-    }
-    .topicon a {
-      font-size: 4vw;
-    }
-    .nav a {
-      font-size: 4vw;
-    }
+  .nav a {
+    font-size: 4vw;
   }
+}
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .collumn {
+    width: 31%;
+  }
+  .topicon a {
+    font-size: 4vw;
+  }
+  .nav a {
+    font-size: 4vw;
+  }
+}
