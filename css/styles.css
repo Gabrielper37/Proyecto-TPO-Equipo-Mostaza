@@ -113,14 +113,14 @@ img {
   width: 100%;
 }
 
-.content {
+.contenido {
   line-height: 0;
   word-spacing: 0.1em;
   display: inline-block;
   margin: 30px 2% 0 2%;
 }
 
-.collumn {
+.columna {
   font-size: 14px;
   line-height: 20px;
   width: 17.5%;
@@ -131,39 +131,39 @@ img {
   transition: all 0.7s;
 }
 
-.collumn ul {
+.columna ul {
   text-align: left;
 }
 
-.collumn .headline {
+.columna .headline {
   text-align: center;
   line-height: normal;
   display: block;
   margin: 0 auto;
 }
 
-.collumn .headline.hl3 {
+.columna .headline.hl2 {
   font-family: rocks;
   font-weight: 400;
   font-size: 36px;
   box-sizing: border-box;
   padding: 10px 0 10px 0;
 }
-.collumn .headline.hl4 {
+.columna .headline.hl1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 12px;
   box-sizing: border-box;
   padding: 10px 0 10px 0;
 }
-.collumn .headline.hl4:before {
+.columna .headline.hl1:before {
   content: "";
   width: 100px;
   height: 7px;
   display: block;
   margin: 0 auto;
 }
-.collumn .headline.hl4:after {
+.columna .headline.hl1:after {
   content: "";
   width: 100px;
   height: 10px;
@@ -227,7 +227,7 @@ p {
     display: block;
   }
 
-  .collumn {
+  .columna {
     width: 100%;
   }
 
@@ -242,7 +242,7 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .collumn {
+  .columna {
     width: 100%;
   }
 
@@ -257,7 +257,7 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .collumn {
+  .columna {
     width: 47%;
   }
   .nav a {
@@ -271,7 +271,7 @@ p {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .collumn {
+  .columna {
     width: 47%;
   }
   .topicon a {
@@ -284,7 +284,7 @@ p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .collumn {
+  .columna {
     width: 31%;
   }
   .topicon a {
