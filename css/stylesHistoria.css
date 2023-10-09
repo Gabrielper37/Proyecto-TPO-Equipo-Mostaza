@@ -1,0 +1,214 @@
+@font-face {
+  font-family: rammstein;
+  src: url(../font/rammstein.ttf);
+}
+@font-face {
+  font-family: gothamexp;
+  src: url(../font/gothamknightsexpand.ttf);
+}
+@font-face {
+  font-family: rocks;
+  src: url(../font/chineserocksrg.otf);
+}
+
+body, html {
+    height: 100%;
+    text-decoration-line: none;
+    width: 100%;
+    margin: 0;
+}
+
+/* Flex Sticky de Rammstein */
+.topicon {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  z-index: 1000;
+  justify-content: center;
+  background-color: black;
+  text-align: center;
+  
+}
+.topicon h1 {
+  font-family: rammstein;
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+  width: fit-content;
+  background-color: black;
+}
+/* Flex Sticky de Rammstein */
+
+/* .upimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/upimg.jpg
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;#42445A
+    position: relative;
+}
+
+
+.uptxt h1 {
+    font-family: rammstein;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    
+} */
+
+
+/* Sector Navegador */
+.NavBar{
+    grid-area: Navegador;
+    width: 100%;
+    align-self: center;
+}
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav a {
+    font-family: rammstein;
+    font-size: 3vw;
+    color: rgb(255, 0, 0);
+    padding: 1%;
+    width: fit-content;
+    text-align: center;
+    text-decoration-line: none;
+}
+.nav a:hover {
+    background-color: rgba(34, 34, 34, 0.801);
+}
+/* Sector Navegador */
+
+.contenedor {   /* En desuso */
+  background-color: black;
+  color: white;
+  padding: 2px;
+}
+
+
+/* Tiene todo menos el video */
+.ContenedorHistoria {
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-width: 1500px;
+    /*ancho máximo de la página*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "Navegador Navegador Navegador Navegador"
+    "LogoRammstein LogoRammstein LogoRammstein LogoRammstein"
+    "MainHistoria MainHistoria MainHistoria MainHistoria"
+    "Pie Pie Pie Pie"
+  ;
+  }
+  /* Tiene todo menos el video */
+
+  /* Logo Rammstein */
+  /* No esta 100% Funcional, manejado principalmente en el html*/
+  .LogoRammstein{
+    grid-area: LogoRammstein;
+    max-width: 100%;
+    max-height: fit-content;
+    align-content: center;
+  }
+  .MainHistoria{
+    grid-area: MainHistoria;
+  }
+
+  /* ---------- FOOTER ----------- */
+
+  .Pie{
+    grid-area: Pie;
+  }
+
+footer {
+  background-color: #000;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  height: max-content;
+  padding: 40px 20px;
+ 
+}
+
+footer .footer_columna{
+  color:#fff;
+  width: 30%;
+
+}
+footer .footer_columna p{
+  font-weight: 300;
+  ;
+}
+
+footer  li,a, p { 
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer_linea p{
+  background-color: #2e2e2e;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  height: 30px;
+  padding: 10px 10px 0px 40px;
+  text-align: center;   
+}
+
+ 
+/* ---------- MEDIA ----------- */
+
+/* ---------- PANTALLAS MENORES A 1300PX ----------- */
+
+@media only screen and (max-width: 1200px){
+ 
+  .row_album img{
+      width: 300px;
+      height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+
+  .topicon h1 {
+      font-size: 2.5em;
+      padding-top: 10px;   
+  }
+
+  .nav{    
+      flex-direction: column;
+  }
+
+  .nav a{
+      font-size: 2em;
+  }
+
+
+  footer .footer_columna {
+      width: 90%;
+  }
+}

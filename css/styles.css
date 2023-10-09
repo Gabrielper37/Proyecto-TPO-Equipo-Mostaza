@@ -1,206 +1,405 @@
 @font-face {
-    font-family:rammstein ;
+    font-family: rammstein;
     src: url(../font/rammstein.ttf);
-}
-
-body, html {
+  }
+  @font-face {
+    font-family: gothamexp;
+    src: url(../font/gothamknightsexpand.ttf);
+  }
+  @font-face {
+    font-family: rocks;
+    src: url(../font/chineserocksrg.otf);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  body,
+  html {
     height: 100%;
     text-decoration-line: none;
     width: 100%;
     margin: 0;
-}
-
-/* Flex Sticky de Rammstein */
-.topicon {
-  display: flex;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  height: fit-content;
-  z-index: 1000;
-  justify-content: center;
-  background-color: black;
-  text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
   
-}
-.topicon h1 {
-  font-family: rammstein;
-  text-align: center;
-  color: white;
-  font-size: 3.5em;
-  width: fit-content;
-  background-color: black;
-}
-/* Flex Sticky de Rammstein */
-
-/* .upimg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/upimg.jpg
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;#42445A
-    position: relative;
-}
-
-
-.uptxt h1 {
+  /* PRUEBA NUEVA NAV*/
+  
+  
+  
+  
+  /* PRUEBA NUEVA NAV*/
+  
+  
+  #topiconcont {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .topicon {
+    position: fixed;
+    top: 1%;
+    z-index: 1000;
+    text-align: center;
+  }
+  .topicon a {
     font-family: rammstein;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
-    position: absolute;
-    
-} */
-
-
-/* Sector Navegador */
-.NavBar{
-    grid-area: Navegador;
+    font-size: 1vw;
+    text-decoration-line: none;
+  }
+  
+  #block1 {
+    margin: 0;
     width: 100%;
-    align-self: center;
-}
-.nav {
+    height: 100%;
+    position: static;
+  }
+  
+  #block2 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: static;
+    display: none;
+  }
+  /* PRUEBA NAV MOVIL */
+  
+  .topnav {
+    overflow: hidden;
+    background-color:black;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topnav .logo {
+    font-size: 10vw;
+    font-family: rammstein;
+    text-align: center;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .topnav a {
+    font-family: gothamexp;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 4vw;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  /* PRUEBA NAV MOVIL */
+  .nav {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     position: relative;
     top: 0;
     width: 100%;
+    background-color: black;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.nav a {
-    font-family: rammstein;
+  }
+  
+  .nav a {
+    font-family: gothamexp;
     font-size: 3vw;
     color: rgb(255, 0, 0);
-    padding: 1%;
+    padding: 0 3% 0 3%;
     width: fit-content;
     text-align: center;
     text-decoration-line: none;
-}
-.nav a:hover {
+  }
+  
+  .nav a:hover {
     background-color: rgba(34, 34, 34, 0.801);
-}
-/* Sector Navegador */
-
-.contenedor {   /* En desuso */
-  background-color: black;
-  color: white;
-  padding: 2px;
-}
-
-
-/* Tiene todo menos el video */
-.ContenedorHistoria {
-    background-color: black;
+  }
+  
+  .contenedor {
     color: white;
+    padding: 1%;
+    background-color: #000000;
+    opacity: 1;
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(
+      to right,
+      #160606,
+      #160606 0.6000000000000001px,
+      #000000 0.6000000000000001px,
+      #000000
+    );
+  }
+  a {
+    text-decoration: none;
+    color: red;
+  }
+  .head p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .head {
+    text-align: center;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  img {
     width: 100%;
-    max-width: 1500px;
-    /*ancho máximo de la página*/
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "Navegador Navegador Navegador Navegador"
-    "LogoRammstein LogoRammstein LogoRammstein LogoRammstein"
-    "MainHistoria MainHistoria MainHistoria MainHistoria"
-    "Pie Pie Pie Pie"
-  ;
   }
-  /* Tiene todo menos el video */
-
-  /* Logo Rammstein */
-  /* No esta 100% Funcional, manejado principalmente en el html*/
-  .LogoRammstein{
-    grid-area: LogoRammstein;
-    max-width: 100%;
-    max-height: fit-content;
-    align-content: center;
+  
+  .contenido {
+    line-height: 0;
+    word-spacing: 0.1em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
   }
-  .MainHistoria{
-    grid-area: MainHistoria;
+  
+  .columna {
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all 0.7s;
   }
-
-  /* ---------- FOOTER ----------- */
-
-  .Pie{
-    grid-area: Pie;
+  
+  .columna ul {
+    text-align: left;
   }
-
-footer {
-  background-color: #000;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
-  height: max-content;
-  padding: 40px 20px;
- 
-}
-
-footer .footer_columna{
-  color:#fff;
-  width: 30%;
-
-}
-footer .footer_columna p{
-  font-weight: 300;
-  ;
-}
-
-footer  li,a, p { 
-  text-decoration: none;
-  color: #fff;
-  list-style-type: none;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.footer_linea p{
-  background-color: #2e2e2e;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  height: 30px;
-  padding: 10px 10px 0px 40px;
-  text-align: center;   
-}
-
- 
-/* ---------- MEDIA ----------- */
-
-/* ---------- PANTALLAS MENORES A 1300PX ----------- */
-
-@media only screen and (max-width: 1200px){
- 
-  .row_album img{
-      width: 300px;
-      height: 300px;
+  
+  .columna .headline {
+    text-align: center;
+    line-height: normal;
+    display: block;
+    margin: 0 auto;
   }
-
-}
-
-@media only screen and (max-width: 800px){
-
-  .topicon h1 {
-      font-size: 2.5em;
-      padding-top: 10px;   
+  
+  .columna .headline.hl2 {
+    font-family: rocks;
+    font-weight: 400;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
   }
-
-  .nav{    
-      flex-direction: column;
+  .columna .headline.hl1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
   }
-
-  .nav a{
-      font-size: 2em;
+  .columna .headline.hl1:before {
+    content: "";
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
   }
-
-
-  footer .footer_columna {
-      width: 90%;
+  .columna .headline.hl1:after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
   }
-}
+  
+  footer {
+    background-color: #000;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+    height: max-content;
+    padding: 40px 20px;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .footer_columna1 {
+    color: #fff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2%;
+  }
+  
+  .footer_columna2 {
+    color: #fff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2%;
+  }
+  .footer_columna2 h3 {
+    width: max-content;
+    font-weight: bold;
+  }
+  .footer_columna2 ul {
+    width: max-content;
+  }
+  .footer_columna3 {
+    color: #fff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2%;
+  }
+  .footer_columna3 h3 {
+    width: max-content;
+    font-weight: bold;
+  }
+  .footer_columna3 ul {
+    width: max-content;
+  }
+  
+  .footer_linea {
+    position: relative;
+    background-color: #2e2e2e;
+    top: 0;
+  }
+  .footer_linea p {
+    color: white;
+    background-color: #2e2e2e;
+    font-weight: 300;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  /*________________________________________________________________________________________________________________________________*/
+  /*MEDIAQUERIES*/
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  
+    #block1 {
+      display: none;
+    }
+  
+    #block2 {
+      display: block;
+    }
+  
+    .columna {
+      width: 100%;
+    }
+  
+    .topnav {
+      display: flex;
+    }
+  
+    .nav {
+      display: none;
+    }
+  
+    .topicon {
+      display: none;
+  
+    }
+  
+    .topicon a {
+      font-size: 10vw;
+    }
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .columna {
+      width: 100%;
+    }
+  
+    .nav a {
+      font-size: 4vw;
+    }
+  
+    .topicon a {
+      font-size: 4vw;
+    }
+    
+    
+  }
+  
+  @media only screen and (max-width: 670px) {
+    
+    .footer_columna1 {
+      text-align: center;
+      width: 100%;
+    }
+    .footer_columna2 {
+      width: max-content;
+    }
+    .footer_columna3 {
+      width: max-content;
+    }
+  
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .columna {
+      width: 47%;
+    }
+    .nav a {
+      font-size: 4vw;
+    }
+  
+    .topicon a {
+      font-size: 4vw;
+    }
+    
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .columna {
+      width: 47%;
+    }
+    .topicon a {
+      font-size: 4vw;
+    }
+    .nav a {
+      font-size: 4vw;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .columna {
+      width: 31%;
+    }
+    .topicon a {
+      font-size: 4vw;
+    }
+    .nav a {
+      font-size: 4vw;
+    }
+  }
