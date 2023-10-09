@@ -108,8 +108,8 @@ body, html {
     "Navegador Navegador Navegador Navegador"
     "LogoRammstein LogoRammstein LogoRammstein LogoRammstein"
     "MainHistoria MainHistoria MainHistoria MainHistoria"
-    "MainHistoria MainHistoria MainHistoria MainHistoria"
-    "Pie Pie Pie Pie";
+    "Pie Pie Pie Pie"
+  ;
   }
   /* Tiene todo menos el video */
 
@@ -125,6 +125,82 @@ body, html {
     grid-area: MainHistoria;
   }
 
+  /* ---------- FOOTER ----------- */
+
   .Pie{
     grid-area: Pie;
   }
+
+footer {
+  background-color: #000;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  height: max-content;
+  padding: 40px 20px;
+ 
+}
+
+footer .footer_columna{
+  color:#fff;
+  width: 30%;
+
+}
+footer .footer_columna p{
+  font-weight: 300;
+  ;
+}
+
+footer  li,a, p { 
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer_linea p{
+  background-color: #2e2e2e;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  height: 30px;
+  padding: 10px 10px 0px 40px;
+  text-align: center;   
+}
+
+ 
+/* ---------- MEDIA ----------- */
+
+/* ---------- PANTALLAS MENORES A 1300PX ----------- */
+
+@media only screen and (max-width: 1200px){
+ 
+  .row_album img{
+      width: 300px;
+      height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+
+  .topicon h1 {
+      font-size: 2.5em;
+      padding-top: 10px;   
+  }
+
+  .nav{    
+      flex-direction: column;
+  }
+
+  .nav a{
+      font-size: 2em;
+  }
+
+
+  footer .footer_columna {
+      width: 90%;
+  }
+}
