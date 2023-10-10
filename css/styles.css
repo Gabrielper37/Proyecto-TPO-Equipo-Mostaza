@@ -1,3 +1,5 @@
+/*          FUENTES         */
+
 @font-face {
   font-family: rammstein;
   src: url(../font/rammstein.ttf);
@@ -10,6 +12,8 @@
   font-family: rocks;
   src: url(../font/chineserocksrg.otf);
 }
+
+/*          ESTILO GENERAL          */
 
 * {
   box-sizing: border-box;
@@ -25,12 +29,11 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* PRUEBA NUEVA NAV*/
 
 
 
 
-/* PRUEBA NUEVA NAV*/
+/*          RAMMSTEIN STICKY          */
 
 
 #topiconcont {
@@ -43,6 +46,7 @@ html {
   top: 1%;
   z-index: 1000;
   text-align: center;
+  --animate-duration: 5s;
 }
 .topicon a {
   font-family: rammstein;
@@ -51,6 +55,8 @@ html {
   font-size: 1vw;
   text-decoration-line: none;
 }
+
+/*          ESTILOS DE VIDEO PRINCIAL         */
 
 #block1 {
   margin: 0;
@@ -66,7 +72,8 @@ html {
   position: static;
   display: none;
 }
-/* PRUEBA NAV MOVIL */
+
+/*          NAV CELU         */
 
 .topnav {
   overflow: hidden;
@@ -110,7 +117,7 @@ html {
   color: black;
 }
 
-/* PRUEBA NAV MOVIL */
+/*          NAV PRINCIPAL          */
 .nav {
   display: flex;
   flex-flow: row;
@@ -135,6 +142,8 @@ html {
 .nav a:hover {
   background-color: rgba(34, 34, 34, 0.801);
 }
+
+/*          CONTENIDO PRINCIPAL (NOTICIAS)        */
 
 .contenedor {
   color: white;
@@ -225,6 +234,8 @@ img {
   margin: 0 auto;
 }
 
+/*          FOOTER          */
+
 footer {
   background-color: #000;
   display: flex;
@@ -298,8 +309,10 @@ footer {
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 
-/* Extra small devices (phones, 600px and down) */
+/* DISPOSITIVOS EXTRA CHICOS (telefonos, 600px o menos) */
 @media only screen and (max-width: 600px) {
+
+/*          SWITCH ENTRE VIDEO PRINCIPAL Y CELU          */
 
   #block1 {
     display: none;
@@ -308,10 +321,12 @@ footer {
   #block2 {
     display: block;
   }
-
+/*          DISTRIBUCIÓN DE COLUMAS DE LAS NOTICIAS          */
   .columna {
     width: 100%;
   }
+
+/*          SWITCH ENTRE NAV PRINCIPAL Y CELU          */
 
   .topnav {
     display: flex;
@@ -320,6 +335,8 @@ footer {
   .nav {
     display: none;
   }
+
+/*          SWITCH ENTRE RAMMSTEIN STICKY Y ABSOLUTO          */
 
   .topicon {
       text-align: center;
@@ -338,11 +355,16 @@ footer {
   
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* DISPOSITIVOS PEQUEÑOS (celulares horizontales Y tablets verticales, 600px para arriba) */
 @media only screen and (min-width: 600px) {
+ 
+ /*          DISTRIBUCIÓN DE COLUMAS DE LAS NOTICIAS          */
+ 
   .columna {
     width: 100%;
   }
+
+/*          TAMAÑO DE FUENTES DE NAVEGADOR PRINCIPAL Y RAMMSTEIN STICKY          */
 
   .nav a {
     font-size: 4vw;
@@ -354,6 +376,8 @@ footer {
   
   
 }
+
+/*          QUERY ESPECIAL PARA EL FOOTER          */
 
 @media only screen and (max-width: 670px) {
   
@@ -369,7 +393,8 @@ footer {
   }
 
 }
-/* Medium devices (landscape tablets, 768px and up) */
+
+/* DISPOSITIVOS MEDIANOS (tablets horizontales, 768px para arriba) */
 @media only screen and (min-width: 768px) {
   .columna {
     width: 47%;
@@ -384,7 +409,7 @@ footer {
   
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* DISPOSITIVOS GRANDES (laptops y de escritorio, 992px para arriba) */
 @media only screen and (min-width: 992px) {
   .columna {
     width: 47%;
@@ -397,7 +422,7 @@ footer {
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* DISPOSITIVOS EXTRA GRANDES (laptops y esrcitorios extra grandes, 1200px para arriba) */
 @media only screen and (min-width: 1200px) {
   .columna {
     width: 31%;
