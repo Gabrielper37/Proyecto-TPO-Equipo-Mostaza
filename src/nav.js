@@ -4,5 +4,6 @@ function myFunction() {
       x.style.display = "none";
     } else {
       x.style.display = "flex";
+      x.className = "animate__animated animate__fadeIn";
     }
   }
