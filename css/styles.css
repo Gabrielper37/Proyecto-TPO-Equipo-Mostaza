@@ -46,7 +46,7 @@ html {
   top: 1%;
   z-index: 1000;
   text-align: center;
-  --animate-duration: 5s;
+  --animate-duration: 8s;
 }
 .topicon a {
   font-family: rammstein;
@@ -56,7 +56,7 @@ html {
   text-decoration-line: none;
 }
 
-/*          ESTILOS DE VIDEO PRINCIAL         */
+/*          ESTILOS DE VIDEO PRINCIAL Y CELULAR         */
 
 #block1 {
   margin: 0;
@@ -91,7 +91,7 @@ html {
   font-size: 10vw;
   font-family: rammstein;
   text-align: center;
-  color: white;
+  color: red;
 }
 
 .topnav #myLinks {
@@ -113,8 +113,8 @@ html {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: red;
 }
 
 /*          NAV PRINCIPAL          */
@@ -237,7 +237,7 @@ img {
 /*          FOOTER          */
 
 footer {
-  background-color: #000;
+  background-color: darkslategrey;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -382,7 +382,7 @@ footer {
 @media only screen and (max-width: 670px) {
   
   .footer_columna1 {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   .footer_columna2 {
