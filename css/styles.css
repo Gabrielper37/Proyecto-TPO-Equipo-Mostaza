@@ -52,7 +52,7 @@ html {
   font-family: rammstein;
   text-align: center;
   color: white;
-  font-size: 1vw;
+  font-size: 100%;
   text-decoration-line: none;
 }
 
@@ -75,30 +75,34 @@ html {
 
 /*          NAV CELU         */
 
-.topnav {
-  overflow: hidden;
-  background-color:black;
-  position: relative;
-  display: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: center;
-}
-
-.topnav .logo {
+.logo {
   font-size: 10vw;
   font-family: rammstein;
   text-align: center;
   color: red;
 }
 
-.topnav #myLinks {
+#stickyNav {
+  display: none;
+  justify-content: center;
+  background-color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  flex-direction: column;
+
+}
+
+
+
+#myLinks {
   display: none;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  
 }
 
 
@@ -108,13 +112,12 @@ html {
   color: red;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 4vw;
+  font-size: 8vw;
   
 }
 
-.topnav a:hover {
-  background-color: black;
-  color: red;
+#myLinks a:hover {
+  text-decoration: underline;
 }
 
 /*          NAV PRINCIPAL          */
@@ -130,18 +133,39 @@ html {
 }
 
 .nav a {
+  display: inline-block;
+  position: relative;
   font-family: gothamexp;
   font-size: 3vw;
-  color: rgb(255, 0, 0);
+  color: red;
   padding: 0 3% 0 3%;
-  width: fit-content;
+  width: 70%;
   text-align: center;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
-.nav a:hover {
-  background-color: rgba(34, 34, 34, 0.801);
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*.nav a:hover {
+  background-color: rgba(34, 34, 34, 0.801);
+  text-decoration: underline;
+} */
 
 /*          CONTENIDO PRINCIPAL (NOTICIAS)        */
 
@@ -234,10 +258,26 @@ img {
   margin: 0 auto;
 }
 
+.comment {
+  background-color: #000000;
+}
+.utterances-frame {
+  color-scheme: light;
+  position: absolute;
+  left: 10%;
+  right: 0;
+  width: 1px;
+  min-width: 70%;
+  max-width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: black;
+}
 /*          FOOTER          */
 
-footer {
-  background-color: darkslategrey;
+
+ footer {
+  background-color: black;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -249,7 +289,7 @@ footer {
   position: relative;
 }
 
-.footer_columna1 {
+.footer_columna1, .footer_columna2, .footer_columna3 {
   color: #fff;
   width: 30%;
   display: flex;
@@ -259,37 +299,19 @@ footer {
   padding: 2%;
 }
 
-.footer_columna2 {
-  color: #fff;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 2%;
-}
-.footer_columna2 h3 {
+.footer_columna2 h3, .footer_columna3 h3 {
   width: max-content;
   font-weight: bold;
-}
-.footer_columna2 ul {
-  width: max-content;
-}
-.footer_columna3 {
-  color: #fff;
-  width: 30%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 2%;
+  justify-content: left;
 }
-.footer_columna3 h3 {
+.footer_columna2 ul, .footer_columna3 ul {
   width: max-content;
-  font-weight: bold;
-}
-.footer_columna3 ul {
-  width: max-content;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 .footer_linea {
@@ -328,7 +350,7 @@ footer {
 
 /*          SWITCH ENTRE NAV PRINCIPAL Y CELU          */
 
-  .topnav {
+  #stickyNav {
     display: flex;
   }
 
@@ -347,7 +369,6 @@ footer {
   }
 
   .topicon a {
-    color: white;
     font-size: 8vw;
   }
 
@@ -371,7 +392,7 @@ footer {
   }
 
   .topicon a {
-    font-size: 4vw;
+    font-size: 100%;
   }
   
   
@@ -393,7 +414,6 @@ footer {
   }
 
 }
-
 /* DISPOSITIVOS MEDIANOS (tablets horizontales, 768px para arriba) */
 @media only screen and (min-width: 768px) {
   .columna {
@@ -406,7 +426,10 @@ footer {
   .topicon a {
     font-size: 4vw;
   }
-  
+  footer .footer_columna {
+    width: 90%;
+
+}
 }
 
 /* DISPOSITIVOS GRANDES (laptops y de escritorio, 992px para arriba) */

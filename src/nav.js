@@ -8,3 +8,4 @@ function myFunction() {
       x.className = "animate__animated animate__fadeIn";
     }
   }
+  // When the user scrolls the page, execute myFunction
