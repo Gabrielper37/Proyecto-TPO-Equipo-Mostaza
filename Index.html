@@ -207,7 +207,33 @@
 
         </div>
     </div>
+      <!-- Element to contain animated typing -->
+  <span id="tipeo"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#tipeo', {
+        strings: [
+            'COMENTA!',
+            'KOMMENTAR!',
+            'COMETARIU!',
+            'COMMENT!',
+            'OPMERKING!',
+            'KOMEHTIP!'],
+        typeSpeed: 50,
+        backSpeed: 60,
+        loop: true,
+        showCursor: false,
+    });
+  </script>
+
+  
+
 <div class="comment">
+  
     <script src="https://utteranc.es/client.js"
         repo="LucasTroiani/gestion-comentarios"
         issue-term="pathname"
