@@ -83,7 +83,7 @@ body, html {
   #block2 {
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: static;
     display: none;
   }  
@@ -459,7 +459,7 @@ footer  li,a, p {
 
     #block2 {
     display: block;
-    height: 100vh;
+    height: auto;
     }
 
     .topicon_index{
@@ -476,7 +476,7 @@ footer  li,a, p {
     }
 
     .topicon_index a{
-      font-size: 0.4em;
+      font-size: 0.5em;
     }
 
     .nav{    
