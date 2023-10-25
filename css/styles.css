@@ -162,10 +162,20 @@ html {
   transform-origin: bottom left;
 }
 
-/*.nav a:hover {
-  background-color: rgba(34, 34, 34, 0.801);
-  text-decoration: underline;
-} */
+/*Flecha para hacer la pagina hacia arriba*/
+
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+
 
 /*          CONTENIDO PRINCIPAL (NOTICIAS)        */
 
