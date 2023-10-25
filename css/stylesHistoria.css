@@ -158,9 +158,14 @@ img {
   "ContenedorSehnsucht"
   "ContenedorBerlin"
   "ContenedorMutter"
-  "ContenedorVolker"
+  "ContenedorRosenrot"
+  "ContenedorVolkerball"
   "ContenedorLiebe"
   "ContenedorGermany"
+  "ContenedorAmerika"
+  "ContenedorParis"
+  "ContenedorRammstein"
+  "ContenedorZeit"
   ;
 /*  GRID PRINCIPAL *//*  GRID PRINCIPAL *//*  GRID PRINCIPAL *//*  GRID PRINCIPAL */
 
@@ -215,20 +220,26 @@ img {
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-columns: 0.20fr 0.60fr 0.20fr;
+  grid-template-columns: 0.34fr 0.32fr 0.34fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
   ". HIMG1 ."
   ;
+  width: 100%;
 }
 .HIMG1{
   grid-area: HIMG1;
   border-style: double;
   border-color: red;
-}
-.HIMG1 img{
   width: 100%;
 }
+.H1IMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+
 .HerzeleidTexto1{
   grid-area: HerzeleidTexto1;
   position: relative;
@@ -259,11 +270,12 @@ img {
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-columns: 0.20fr 0.60fr 0.10fr 0.60fr 0.20fr;
+  grid-template-columns: 0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
   ". HIMG1 . HIMG2 ."
   ;
+  width: 100%;
 }
 .SehnsuchtIMG1{
   grid-area: HIMG1;
@@ -273,6 +285,9 @@ img {
 }
 .SehnsuchtIMG1 img{
   width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
 }
 .SehnsuchtIMG2{
   grid-area: HIMG2;
@@ -282,8 +297,8 @@ img {
 }
 .SehnsuchtIMG2 img{
   width: 100%;
-  height: 32vw;
-  max-height: 273px;
+  height: 30vw;
+  max-height: 30vw;
   min-height: 94px;
 }
 .SehnsuchtTexto1{
@@ -312,7 +327,7 @@ img {
   display: grid;
   align-items: center;
   /* grid-template-columns: 0.20fr 0.60fr 0.10fr 0.60fr 0.20fr; */
-  grid-template-columns: 0.20fr 0.60fr 0.20fr;
+  grid-template-columns: 0.34fr 0.32fr 0.34fr;
   grid-template-rows: 1fr;
   /* grid-template-areas: 
   ". HIMG1 . HIMG2 ."
@@ -320,6 +335,7 @@ img {
   grid-template-areas:
   ". HIMG1 ." 
   ;
+  width: 100%;
 }
 .BerlinIMG1{
   grid-area: HIMG1;
@@ -338,8 +354,8 @@ img {
 }
 .BerlinIMG2 img{
   width: 100%;
-  height: 32vw;
-  max-height: 273px;
+  height: 30vw;
+  max-height: 30vw;
   min-height: 94px;
 }
 .BerlinTexto1{
@@ -365,16 +381,23 @@ img {
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-columns: 0.10fr 0.77fr 0.10fr;
+  grid-template-columns: 0.34fr 0.32fr 0.34fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
   ". HIMG1 ."
   ;
+  width: 100%;
 }
 .MutterIMG1{
   grid-area: HIMG1;
   border-style: double;
   border-color: red;
+}
+.MutterIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
 }
 .MutterTexto1{
   grid-area: MutterTexto1;
@@ -389,17 +412,515 @@ img {
   justify-items: center;
 } */
 /* SECCION MUTTER *//* SECCION MUTTER *//* SECCION MUTTER *//* SECCION MUTTER *//* SECCION MUTTER */
-.columnaEdit{
-  font-size: 14px;
-    line-height: 20px;
-    width: 17.5%;
-    display: inline-block;
-    padding: 0 1% 0 1%;
-    vertical-align: top;
-    margin-bottom: 50px;
-    transition: all 0.7s;
+/* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT */
+.ContenedorRosenrot{
+  grid-area: ContenedorRosenrot;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "RosenrotTexto1"
+                        "RosenrotIMG";
+}
+.RosenrotIMG{
+  grid-area: RosenrotIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.RosenrotIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RosenrotIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RosenrotIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RosenrotIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RosenrotTexto1{
+  grid-area: RosenrotTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT *//* SECCION ROSENROT */
+/* SECCION VOLKERBALL *//* SECCION VOLKERBALL *//* SECCION VOLKERBALL *//* SECCION VOLKERBALL */
+.ContenedorVolkerball{
+  grid-area: ContenedorVolkerball;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "VolkerballTexto1"
+                        "VolkerballIMG";
+}
+.VolkerballIMG{
+  grid-area: VolkerballIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.VolkerballIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.VolkerballIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.VolkerballIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.VolkerballIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.VolkerballTexto1{
+  grid-area: VolkerballTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION VOLKERBALL *//* SECCION VOLKERBALL *//* SECCION VOLKERBALL *//* SECCION VOLKERBALL */
+/* SECCION LIEBE IST FUR ALLE DA *//* SECCION LIEBE IST FUR ALLE DA *//* SECCION LIEBE IST FUR ALLE DA */
+.ContenedorLiebe{
+  grid-area: ContenedorLiebe;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "LiebeTexto1"
+                        "LiebeIMG";
+}
+.LiebeIMG{
+  grid-area: LiebeIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: repeat(2 1fr);
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ". HIMG3 . HIMG4 ."
+  ;
+  width: 100%;
+}
+.LiebeIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.LiebeIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.LiebeIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.LiebeIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.LiebeIMG3{
+  grid-area: HIMG3;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.LiebeIMG3 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.LiebeIMG4{
+  grid-area: HIMG4;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.LiebeIMG4 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.LiebeTexto1{
+  grid-area: LiebeTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION LIEBE IST FUR ALLE DA *//* SECCION LIEBE IST FUR ALLE DA *//* SECCION LIEBE IST FUR ALLE DA */
+/* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY */
+.ContenedorGermany{
+  grid-area: ContenedorGermany;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:  "GermanyTexto1"
+                        "GermanyIMG"
+                        "GermanyTexto2";
+}
+.GermanyIMG{
+  grid-area: GermanyIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.GermanyIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.GermanyIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.GermanyIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.GermanyIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.GermanyTexto1{
+  grid-area: GermanyTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+.GermanyTexto2{
+  grid-area: GermanyTexto2;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY *//* SECCION MADE IN GERMANY */
+/* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA */
+.ContenedorAmerika{
+  grid-area: ContenedorAmerika;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:  "AmerikaTexto1"
+                        "AmerikaIMG"
+                        "AmerikaTexto2";
+}
+.AmerikaIMG{
+  grid-area: AmerikaIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.AmerikaIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.AmerikaIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.AmerikaIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.AmerikaIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.AmerikaTexto1{
+  grid-area: AmerikaTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+.AmerikaTexto2{
+  grid-area: AmerikaTexto2;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA *//* SECCION AMERIKA */
+/* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS */
+.ContenedorParis{
+  grid-area: ContenedorParis;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "ParisTexto1"
+                        "ParisIMG";
+}
+.ParisIMG{
+  grid-area: ParisIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.ParisIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.ParisIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.ParisIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.ParisIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.ParisTexto1{
+  grid-area: ParisTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS *//* SECCION PARIS */
+/* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN */
+.ContenedorRammstein{
+  grid-area: ContenedorRammstein;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "RammsteinTexto1"
+                        "RammsteinIMG";
+}
+.RammsteinIMG{
+  grid-area: RammsteinIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: repeat(2 1fr);
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ". HIMG3 . HIMG4 ."
+  ;
+  width: 100%;
+}
+.RammsteinIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RammsteinIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RammsteinIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RammsteinIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RammsteinIMG3{
+  grid-area: HIMG3;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RammsteinIMG3 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RammsteinIMG4{
+  grid-area: HIMG4;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.RammsteinIMG4 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.RammsteinTexto1{
+  grid-area: RammsteinTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN *//* SECCION RAMMSTEIN */
+/* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT */
+.ContenedorZeit{
+  grid-area: ContenedorZeit;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "ZeitTexto1"
+                        "ZeitIMG";
+}
+.ZeitIMG{
+  grid-area: ZeitIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 . HIMG2 ."
+  ;
+  width: 100%;
+}
+.ZeitIMG1{
+  grid-area: HIMG1;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.ZeitIMG1 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.ZeitIMG2{
+  grid-area: HIMG2;
+  border-style: double;
+  border-color: red;
+  height: 85%;
+}
+.ZeitIMG2 img{
+  width: 100%;
+  height: 30vw;
+  max-height: 30vw;
+  min-height: 94px;
+}
+.ZeitTexto1{
+  grid-area: ZeitTexto1;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+/* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT *//* SECCION ZEIT */
+/* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES */
+.ContenedorGrid img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
 }
 
+.ContenedorGrid img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  transition: all 0.4s ease;
+}
+/* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES *//* FILTRO GRIS IMAGENES */
   .columna {
     font-size: 14px;
     line-height: 20px;
@@ -466,7 +987,7 @@ img {
   
   .footer_columna1 {
     color: #fff;
-    width: 30%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -476,7 +997,7 @@ img {
   
   .footer_columna2 {
     color: #fff;
-    width: 30%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -492,7 +1013,7 @@ img {
   }
   .footer_columna3 {
     color: #fff;
-    width: 30%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
