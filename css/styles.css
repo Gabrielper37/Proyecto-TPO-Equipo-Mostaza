@@ -29,7 +29,11 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
 
 
 
