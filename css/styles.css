@@ -54,12 +54,7 @@ html {
   --animate-duration: 2s;
   font-size: 6vw;
 }
-.topicon a {
-  font-family: rammstein;
-  text-align: center;
-  color: white;
-  text-decoration-line: none;
-}
+
 
 /*          ESTILOS DE VIDEO PRINCIAL Y CELULAR         */
 
@@ -381,10 +376,6 @@ justify-content: center;
       transform: translate(-50%, -50%);
   }
 
-  .topicon a {
-    font-size: 8vw;
-  }
-
   #tipeo {
     font-size: 3vw;
   }
@@ -413,11 +404,6 @@ justify-content: center;
     font-size: 4vw;
   }
 
-  .topicon a {
-    font-size: 8vw;
-   
-    
-  }
   
   
 }
@@ -447,9 +433,6 @@ justify-content: center;
     font-size: 4vw;
   }
 
-  .topicon a {
-    font-size: 8vw;
-  }
   footer .footer_columna {
     width: 90%;
 
@@ -461,11 +444,13 @@ justify-content: center;
   .columna {
     width: 47%;
   }
-  .topicon a {
-    font-size: 6vw;
-  }
+
   .nav a {
     font-size: 4vw;
+  }
+  #imagen {
+    width: 60%;
+    height: auto;
   }
 }
 
@@ -474,10 +459,12 @@ justify-content: center;
   .columna {
     width: 31%;
   }
-  .topicon a {
-    font-size: 6vw;
-  }
   .nav a {
     font-size: 4vw;
   }
+  #imagen {
+    width: 40%;
+  }
 }
+
+
