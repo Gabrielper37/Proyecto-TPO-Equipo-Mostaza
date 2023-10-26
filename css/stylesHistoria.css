@@ -565,7 +565,7 @@ img {
   grid-template-areas:  "LiebeTexto1"
                         "LiebeIMG";
 }
-.LiebeIMG{
+/* .LiebeIMG{
   grid-area: LiebeIMG;
   align-items: center;
   justify-items: center;
@@ -576,6 +576,24 @@ img {
   ". HIMG1 . HIMG2 ."
   ". HIMG3 . HIMG4 ."
   ;
+  width: 100%;
+} */
+.LiebeIMG{
+  grid-area: LiebeIMG;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  /* grid-template-columns:  0.05fr 0.225fr 0.225fr 0.225fr 0.225fr  0.05fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  ". HIMG1 HIMG2 HIMG3 HIMG4 ."
+  ; */
+  grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+      grid-template-rows: repeat(2 1fr);
+      grid-template-areas: 
+      ". HIMG1 . HIMG2 ."
+      ". HIMG3 . HIMG4 ."
+      ;
   width: 100%;
 }
 .LiebeIMG1{
@@ -1159,6 +1177,16 @@ img {
       ". HIMG2 ."
       ;
     }
+    .LiebeIMG{
+      grid-template-columns:  0.05fr 0.90fr 0.05fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+      ". HIMG1 ."
+      ". HIMG2 ."
+      ". HIMG3 ."
+      ". HIMG4 ."
+      ;
+    }
     .GermanyIMG{
       grid-template-columns:  0.05fr 0.90fr 0.05fr;
       grid-template-rows: 1fr 1fr;
@@ -1181,6 +1209,16 @@ img {
       grid-template-areas: 
       ". HIMG1 ."
       ". HIMG2 ."
+      ;
+    }
+    .RammsteinIMG{
+      grid-template-columns:  0.05fr 0.90fr 0.05fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+      ". HIMG1 ."
+      ". HIMG2 ."
+      ". HIMG3 ."
+      ". HIMG4 ."
       ;
     }
     .ZeitIMG{
@@ -1211,6 +1249,7 @@ img {
     }
     
     
+    
   }
   
   @media only screen and (max-width: 670px) {
@@ -1225,7 +1264,14 @@ img {
     .footer_columna3 {
       width: max-content;
     }
-  
+    /* .LiebeIMG{
+      grid-template-columns:  0.20fr 0.44fr 0.10fr 0.44fr 0.20fr;
+      grid-template-rows: repeat(2 1fr);
+      grid-template-areas: 
+      ". HIMG1 . HIMG2 ."
+      ". HIMG3 . HIMG4 ."
+      ;
+    } */
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
@@ -1239,6 +1285,7 @@ img {
     .topicon a {
       font-size: 4vw;
     }
+    
     
   }
   /*  */
@@ -1265,6 +1312,20 @@ img {
     }
     .nav a {
       font-size: 4vw;
+    }
+    .LiebeIMG{
+      grid-template-columns:  0.05fr 0.225fr 0.225fr 0.225fr 0.225fr  0.05fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      ". HIMG1 HIMG2 HIMG3 HIMG4 ."
+    ;
+    }
+    .RammsteinIMG{
+      grid-template-columns:  0.05fr 0.225fr 0.225fr 0.225fr 0.225fr  0.05fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      ". HIMG1 HIMG2 HIMG3 HIMG4 ."
+    ;
     }
   }
 
