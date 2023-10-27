@@ -67,6 +67,8 @@ body, html {
     
  }
 
+
+
 .contenedor {
   background-color: black;
   color: white;
@@ -83,7 +85,7 @@ body, html {
   #block2 {
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: static;
     display: none;
   }  
@@ -411,6 +413,63 @@ footer  li,a, p {
 }
 
 
+/* -------------------------------------------------------------------------------------------------- */
+/* PRUEBA NAV MOVIL */
+  
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav .logo {
+  font-size: 10vw;
+  font-family: rammstein;
+  text-align: center;
+  color: red;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#myLinks a {
+  font-family: gothamexp;
+  color: red;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 8vw;
+  font-size: 3em;
+  
+}
+
+.topnav a {
+  font-family: gothamexp;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 4vw;
+}
+
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
 
 
 /* ---------- MEDIA ----------- */
@@ -452,6 +511,11 @@ footer  li,a, p {
 /* ---------- PANTALLAS MENORES A 800PX ----------- */
 
 @media only screen and (max-width: 800px){
+
+    .body_background{
+      background-color: #000;
+    }
+
     #block {
     display: none;
     height: 60%;
@@ -459,7 +523,7 @@ footer  li,a, p {
 
     #block2 {
     display: block;
-    height: 100vh;
+    height: auto;
     }
 
     .topicon_index{
@@ -472,16 +536,21 @@ footer  li,a, p {
 
     .topicon h1 {
         font-size: 2em;
-        padding-top: 10px;   
+        padding-top: 10px;
+        display: none;   
     }
 
     .topicon_index a{
-      font-size: 0.4em;
+      font-size: 0.5em;
     }
 
     .nav{    
         flex-direction: column;
-        
+        display: none;
+    }
+    #nav10{
+      flex-direction: column;
+      display: flex;
     }
 
     .nav a{
@@ -491,7 +560,7 @@ footer  li,a, p {
         margin-bottom: 20px; 
     }
 
-
+    
     .grupo10 .integrante{
       margin: auto 10px;
     } 
@@ -532,6 +601,11 @@ footer  li,a, p {
     h1{
       font-size: 2.6rem;
     }  
+
+    .topnav {
+      display: flex;
+    }
+  
 
 
 };  

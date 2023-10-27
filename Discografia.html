@@ -14,33 +14,46 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
     <!-- Animacion -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="src/wow.min.js"></script>
+  <script src="src/nav.js"></script>
+  <script> new WOW().init(); </script>
   <title>RAMMSTEIN FAN PAGE</title>
 </head>
 
 <body>
   <header>
-    <div class="topicon">
-      <h1>RAMMSTEIN</h1>
+    <!-- NAVEGADOR PRINCIPAL -->
+    <div class="topicon" >
+      <h1 class="animate__animated animate__pulse" ><a href="index.html" class="animate__animated animate__pulse">RAMMSTEIN</a></h1>
     </div>
-
-    <div id="block" style="margin: 0;width: 100%; height: 100%;"
-      data-vide-bg="mp4: vid/Du Hast, webm: Du Hast, poster: vid/maxresdefault">
-    </div>
-
 
     <nav id="nav1" class="nav">
-      <a href="Index.html" title="Home Page">INICIO</a>
-      <a href="Discografia.html" tittle="Home Page">DISCOGRAFIA</a>
-      <a href="Historia.html" title="Home Page">HISTORIA</a>
-      <a href="Nosotros.html" title="Home Page">NOSOTROS</a>
-    </nav>
+      <a href="Index.html">INICIO</a>
+      <a href="Discografia.html">DISCOGRAFIA</a>
+      <a href="Historia.html">HISTORIA</a>
+      <a href="Nosotros.html">NOSOTROS</a>
+  </nav>
+    <!-- NAVEGADOR -->
+    <div class="topnav">
+      <a href="javascript:void(0);" class="logo" onclick="myFunction()">RAMMSTEIN</a>
+  
+     
+      <div id="myLinks">
+          <a href="Index.html">INICIO</a>
+          <a href="Discografia.html">DISCOGRAFIA</a>
+          <a href="Historia.html">HISTORIA</a>
+          <a href="Nosotros.html">NOSOTROS</a>
+      </div>
+    <!-- NAVEGADOR -->
+
+    </div>
   </header>
   <!-- Main -->
   <main class="main">
     <section class="albumes">
       <div class="row_album">
         <div>
-          <img src="img/Albumes/Album1.png" alt="Album Zeit" >
+          <img src="img/Albumes/Album1.webp" alt="Album Zeit" >
           <h2>Zeit</h2>
           <h2>29 Abril 2022</h2>
           <iframe style="border-radius:12px"
@@ -49,7 +62,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album2.png" alt="Album Rammstein">
+          <img src="img/Albumes/Album2.webp" alt="Album Rammstein">
           <h2>Rammstein</h2>
           <h2>17 Mayo 2019</h2>
           <iframe style="border-radius:12px"
@@ -58,7 +71,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album3.png" alt="Album Liebe Ist für Alle Da">
+          <img src="img/Albumes/Album3.webp" alt="Album Liebe Ist für Alle Da">
           <h2>Liebe Ist für Alle Da</h2>
           <h2>16 Octubre 2009</h2>
           <iframe style="border-radius:12px"
@@ -67,7 +80,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album4.png" alt="Album Rosenrot">
+          <img src="img/Albumes/Album4.webp" alt="Album Rosenrot" loading="lazy">
           <h2>Rosenrot</h2>
           <h2>28 Octubre 2005</h2>
           <iframe style="border-radius:12px"
@@ -76,7 +89,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album5.png" alt="Album Reise, Reise">
+          <img src="img/Albumes/Album5.webp" alt="Album Reise, Reise" loading="lazy">
           <h2>Reise, Reise</h2>
           <h2>27 Septiembre 2004</h2>
           <iframe style="border-radius:12px"
@@ -85,7 +98,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album6.png" alt="Album Mutter">
+          <img src="img/Albumes/Album6.webp" alt="Album Mutter" loading="lazy">
           <h2>Mutter</h2>
           <h2>02 Abril 2001</h2>
           <iframe style="border-radius:12px"
@@ -94,7 +107,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album7.jfif" alt="Album Original Single Kollektion">
+          <img src="img/Albumes/Album7.jfif" alt="Album Original Single Kollektion" loading="lazy">
           <h2>Original Single Kollektion</h2>
           <h2>19 Junio 1998</h2>
           <iframe style="border-radius:12px"
@@ -103,7 +116,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album8.png" alt="Album Sehnsucht">
+          <img src="img/Albumes/album8.webp" alt="Album Sehnsucht">
           <h2>Sehnsucht</h2>
           <h2>22 Agosto 1997</h2>
           <iframe style="border-radius:12px"
@@ -112,7 +125,7 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div>
-          <img src="img/Albumes/Album9.jpg" alt="Album Herzeleid">
+          <img src="img/Albumes/album9.webp" alt="Album Herzeleid">
           <h2>Herzeleid</h2>
           <h2>24 Septiembre 1995</h2>
           <iframe style="border-radius:12px"
@@ -136,10 +149,10 @@
     <div class="footer_columna">
       <h3>Mapa de Sitio</h3>
       <ul>
-        <li><a href="#">INICIO</a></li>
-        <li><a href="Discografia.html">DISCOGRAFIA</a></li>
-        <li><a href="#">HISTORIA</a></li>
-        <li><a href="#">NOSOTROS</a></li>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="discografia.html">DISCOGRAFIA</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
       </ul>
     </div>
 
@@ -157,9 +170,6 @@
     <p>Codo a Codo 2023 - Comisión 23543 Python - Grupo 10</p>
   </div>
   <!-- Pie -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="src/jquery.min.js"><\/script>')</script>
-  <script src="src/jquery.vide.js"></script>
 </body>
 
 </html>
