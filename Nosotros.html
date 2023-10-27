@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_dn.css">
   <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon">
       <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,21 +14,39 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
     <!-- Animacion -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+  <script src="src/wow.min.js"></script>
+  <script src="src/nav.js"></script>
+  <script> new WOW().init(); </script>
   <title>RAMMSTEIN FAN PAGE</title>
 </head>
 
 <body>
   <header>
-    <div class="topicon">
-      <h1 class="animate__animated animate__pulse">RAMMSTEIN</h1>
+    <!-- NAVEGADOR PRINCIPAL -->
+    <div class="topicon" >
+      <h1 class="animate__animated animate__pulse" ><a href="index.html" class="animate__animated animate__pulse">RAMMSTEIN</a></h1>
     </div>
 
     <nav id="nav1" class="nav">
-      <a href="Index.html" title="Home Page">INICIO</a>
-      <a href="Discografia.html" tittle="Home Page">DISCOGRAFIA</a>
-      <a href="Historia.html" title="Home Page">HISTORIA</a>
-      <a href="Nosotros.html" title="Home Page">NOSOTROS</a>
-    </nav>
+      <a href="Index.html">INICIO</a>
+      <a href="Discografia.html">DISCOGRAFIA</a>
+      <a href="Historia.html">HISTORIA</a>
+      <a href="Nosotros.html">NOSOTROS</a>
+  </nav>
+    <!-- NAVEGADOR -->
+    <div class="topnav">
+      <a href="javascript:void(0);" class="logo" onclick="myFunction()">RAMMSTEIN</a>
+  
+     
+      <div id="myLinks">
+          <a href="Index.html">INICIO</a>
+          <a href="Discografia.html">DISCOGRAFIA</a>
+          <a href="Historia.html">HISTORIA</a>
+          <a href="Nosotros.html">NOSOTROS</a>
+      </div>
+    <!-- NAVEGADOR -->
+    </div>
+    
   </header>
   <!-- Main -->
   <main class="main">
@@ -66,25 +84,19 @@
         </div>
 
         <div class="integrante">
-          <img src="img/Integrantes/Diego3.webp" alt="" loading="lazy">
+          <img src="img/Integrantes/Mariano.png" alt="" loading="lazy">
           <h4>Mariano</h4>
           <div id="mariano">           
           </div>
         </div>
 
         <div class="integrante">
-          <img src="img/Integrantes/Diego.webp" alt="" loading="lazy">
+          <img src="img/Integrantes/Lucas.png" alt="" loading="lazy">
           <h4>Lucas</h4>
           <div id="lucas">           
           </div>
         </div>
 
-        <div class="integrante">
-          <img src="img/Integrantes/Diego4.webp" alt="" loading="lazy">
-          <h4>Mariana</h4>
-          <div id="mariana">           
-          </div>
-        </div>
     </section>
 
   </main>
@@ -121,7 +133,7 @@
     <p>Codo a Codo 2023 - Comisión 23543 Python - Grupo 10</p>
   </div>
   <!-- Pie -->
-  <script src="src/script.js" loading="lazy"></script>
+  <script src="src/script_dn.js" loading="lazy"></script>
 
 </body>
 
