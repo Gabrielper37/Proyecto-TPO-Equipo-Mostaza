@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_dn.css">
   <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon">
       <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +14,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
     <!-- Animacion -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="src\jquery.min.js"></script>
   <script src="src/wow.min.js"></script>
   <script src="src/nav.js"></script>
   <script> new WOW().init(); </script>
   <title>RAMMSTEIN FAN PAGE</title>
 </head>
 
-<body>
+<body class="color_background">
+  
   <header>
     <!-- NAVEGADOR PRINCIPAL -->
-    <div class="topicon" >
+    <div class="topicon1" >
       <h1 class="animate__animated animate__pulse" ><a href="index.html" class="animate__animated animate__pulse">RAMMSTEIN</a></h1>
     </div>
 
@@ -44,10 +46,12 @@
           <a href="historia.html">HISTORIA</a>
           <a href="nosotros.html">NOSOTROS</a>
       </div>
-    <!-- NAVEGADOR -->
-
     </div>
+
+    <!-- Boton hacia arriba -->
+    
   </header>
+ 
   <!-- Main -->
   <main class="main">
     <section class="albumes">
@@ -136,6 +140,12 @@
       </div>
 
     </section>
+    <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+      <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
   </main>
   <!-- Main -->
 
@@ -153,7 +163,7 @@
         <li><a href="discografia.html">DISCOGRAFIA</a></li>
         <li><a href="historia.html">HISTORIA</a></li>
         <li><a href="nosotros.html">NOSOTROS</a></li>
-      </ul>
+    </ul>
     </div>
 
     <div class="footer_columna">
