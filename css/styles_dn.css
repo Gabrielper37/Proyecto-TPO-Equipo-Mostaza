@@ -391,6 +391,9 @@ footer  li,a, p {
     margin-bottom: 10px;
     text-align: left;
 }
+footer a{
+  color: red;
+}
 
 .footer_linea p{
     background-color: #2e2e2e;
