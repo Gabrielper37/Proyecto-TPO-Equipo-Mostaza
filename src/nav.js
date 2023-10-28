@@ -33,16 +33,28 @@ function irArriba() {
  * Array con las imagenes que se iran mostrando en la web
  */
 var imagenes = new Array(
-  "https://rammwiki.net/www/w/images/b/b8/RunesLogo1994.png",
-  "https://rammwiki.net/www/w/images/9/9e/1994Logo_Fill.png",
-  "https://rammwiki.net/www/w/images/0/0d/RammsteinNewspaperLogo.png",
-  "https://rammwiki.net/www/w/images/b/b5/1995Logo.png",
-  "https://rammwiki.net/www/w/images/a/aa/TrialByFireLogo.png",
-  "https://rammwiki.net/www/w/images/d/d4/1994Logo_Outline.png",
-  "https://rammwiki.net/www/w/images/3/39/2001Logo.png",
-  "https://rammwiki.net/www/w/images/8/8b/5TrackDemoSpineLogo.png",
-  "https://rammwiki.net/www/w/images/f/f1/2011logo.png",
-  "https://rammwiki.net/www/w/images/8/82/2012logo.png"
+  "img/logos/l1.png",
+  "img/logos/l2.png",
+  "img/logos/l3.png",
+  "img/logos/l4.png",
+  "img/logos/l5.png",
+  "img/logos/l6.png",
+  "img/logos/l7.png",
+
+  "img/logos/l9.png",
+
+  "img/logos/l11.png",
+  "img/logos/l12.png",
+  "img/logos/l13.png",
+  "img/logos/l14.png",
+  "img/logos/l15.png",
+  "img/logos/l16.png",
+  "img/logos/l17.png",
+  "img/logos/l18.png",
+  "img/logos/l19.png",
+  "img/logos/l20.png",
+  "img/logos/l21.png",
+  "img/logos/l22.png"
 );
 
 /**
