@@ -11,6 +11,10 @@
   src: url(../font/chineserocksrg.otf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body, 
 html {
     height: 100%;
