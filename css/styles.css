@@ -272,13 +272,20 @@ img {
   margin: 0 auto;
 }
 
+.cajita {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+
+}
+
 #tipeo {
   font-family: rammstein;
   font-size: 2vw;
   color: white;
   background-color: #000000;
-display: flex;
-justify-content: center;
+  position: absolute;
+  text-align: center;
 }
 
 .comment {
