@@ -27,6 +27,7 @@ html {
   width: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  background-color: #000000;
 }
 
 @keyframes spin {
@@ -275,8 +276,10 @@ img {
 .cajita {
   background-color: #000000;
   display: flex;
+  position: static;
+  align-items: center;
   justify-content: center;
-
+  padding: 19px;
 }
 
 #tipeo {
@@ -290,7 +293,6 @@ img {
 
 .comment {
   background-color: #000000;
-  
 }
 /*          FOOTER          */
 
