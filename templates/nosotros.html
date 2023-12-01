@@ -55,14 +55,14 @@
     <section class="form_mapa">
       <article>
           <h2 >Formulario de contacto</h2>
-          <form class="formulario_contacto" name="formulario">
+          <form class="formulario_contacto" name="formulario" method="post" action="/storenosotros" enctype="multipart/form-data">
               <label >Nombre y Apellido</label>
-              <input name="fnombre" type="text" placeholder="Ingrese su Nombre y Apellido" value="">
+              <input name="fnombre" type="text" placeholder="Ingrese su Nombre y Apellido" value="" id="fnombre">
               <label>Email</label>
-              <input name="fcorreo" type="email" placeholder="Ingrese su correo">
+              <input name="fcorreo" type="email" placeholder="Ingrese su correo" id="fcorreo">
               <label >Mensaje</label>
-              <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese su Mensaje..."></textarea>
-              <button id="btn" onclick="mensaje"  type="submit"> Enviar</button>
+              <input name="fmensaje" id="fmensaje" placeholder="Ingrese su Mensaje..."></input>
+              <button id="btn" onclick="mensaje"  type="submit" value="Agregar"> Enviar</button>
           </form>
           <p class="mensajeEnviado"></p>
       </article>
