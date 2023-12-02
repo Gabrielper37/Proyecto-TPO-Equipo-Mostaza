@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flaskext.mysql import MySQL
 
 
@@ -55,12 +55,44 @@ def storage():
 
 @app.route("/login")
 def Login():
-    sql = "INSERT INTO `tpocrud`.`loginsystem` (`ID`, `User`, `Password`, `Email`, `Rank`) VALUES (NULL, 'Gabriel', 'Mariano', 'mariano.gabriel.persano@gmail.com', '1');"
+    # sql = "INSERT INTO `tpocrud`.`loginsystem` (`ID`, `User`, `Password`, `Email`, `Rank`) VALUES (NULL, 'Gabriel', 'Mariano', 'mariano.gabriel.persano@gmail.com', '1');"
+    # conn = mysql.connect()
+    # cursor = conn.cursor()
+    # cursor.execute(sql)
+    # conn.commit()
+    return render_template("Login.html")
+
+@app.route("/checklogin" ,methods=["POST","GET"])
+def check():
+    user = request.form["fuser"]
+    password = request.form["fpassword"]
+    # Tupla para el cursor, si va por separado no funciona.
+    datos = (user,password)            
+    # El query averigua si la tupla coincide con algun "Users" y "Passwords" en la tabla.
+    sql = "SELECT `Users`, `Passwords` FROM tpocrud.loginsystem WHERE `Users` = %s AND `Passwords` = %s"
     conn = mysql.connect()
     cursor = conn.cursor()
-    cursor.execute(sql)
+    cursor.execute(sql,datos)
     conn.commit()
-    return render_template("Login.html")
+    # Guardamos la data en resultado, si el query falla, no guarda nada.
+    resultado = cursor.fetchall()
+
+    # debug
+    # print(datos)
+
+    # verificamos si resultado tiene algo, si tiene accede, sino tira error.
+    if resultado:
+        # print debug para terminal
+        print("Usuario y contraseña correcto")
+        return redirect("/adminnosotros")
+    else:
+        print("No encontro nada")
+        return render_template("Login.html")
+
+    
+
+
+
 
 
 @app.route("/adminnosotros")
