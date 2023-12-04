@@ -44,7 +44,7 @@ def storage():
     Mensaje = request.form["fmensaje"]
     datos = (NombreyApellido,Email,Mensaje)
 
-    sql = "INSERT INTO tpocrud.msglist (ID, NombreyApellido, Email, Mensaje) VALUES (NULL, %s, %s, %s)";
+    sql = "INSERT INTO tpocrud.msglist (ID, NombreyApellido, Email, Mensaje, Status) VALUES (NULL, %s, %s, %s, No Respondido.)";
     conn = mysql.connect()
     cursor = conn.cursor()
     cursor.execute(sql,datos)
@@ -87,7 +87,8 @@ def check():
         return redirect("/adminnosotros")
     else:
         print("No encontro nada")
-        return render_template("Login.html")
+        return render_template("Login.html", status="Usuario y/o contraseña incorrecto/s")
+    # "status" sirve para informarle al usuario si hay algun problema
 
     
 
@@ -97,8 +98,49 @@ def check():
 
 @app.route("/adminnosotros")
 def AdminNosotros():
+    sql = "SELECT * FROM tpocrud.msglist ;"
+    conn=mysql.connect()
+    cursor=conn.cursor()
+    cursor.execute(sql)
+    msglist=cursor.fetchall()
+    conn.commit()
 
-    return render_template("adminnosotros.html")
+    return render_template("adminnosotros.html",msglist=msglist)
+
+@app.route("/adminnosotros/destroy/<int:id>")
+def destroy(id):
+    conn=mysql.connect()
+    cursor=conn.cursor()
+    sql="DELETE FROM tpocrud.msglist WHERE id=%s"
+    cursor.execute(sql,id)
+    conn.commit()
+    return redirect("/adminnosotros")
+
+@app.route("/adminnosotros/editar/<int:id>")
+def edit(id):
+    sql = "SELECT * FROM tpocrud.msglist WHERE id=%s;"
+    conn=mysql.connect()
+    cursor=conn.cursor()
+    cursor.execute(sql,id)
+    msglist=cursor.fetchall()
+    conn.commit()
+    return render_template("Editar.html",msglist=msglist)
+
+@app.route('/update', methods=['POST',"GET"])
+def update():
+    IDs=request.values["IDs"]
+    Nombre=request.form['Nombre']
+    Email=request.form['Email']
+    Mensaje=request.form['Mensaje']
+    Status=request.form['Status']
+
+    datos=(Nombre,Email,Mensaje,Status,IDs)
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    sql = "UPDATE tpocrud.msglist SET NombreyApellido=%s, Email=%s, Mensaje=%s, Status=%s WHERE id=%s;"
+    cursor.execute(sql,datos)
+    conn.commit()
+    return redirect('/adminnosotros')
 
 
 

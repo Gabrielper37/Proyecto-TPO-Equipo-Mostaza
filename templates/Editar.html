@@ -17,9 +17,6 @@
     <script src="src/jquery.vide.js"></script>
     <script src="src/wow.min.js"></script>
     <script src="src/nav.js"></script>
-    <!-- Style para la tabla -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
-    <!-- Style para la tabla -->
               <script>
               new WOW().init();
               </script>
@@ -59,34 +56,29 @@
     <div class="contenedor">
       <section class="form_mapa">
         <article>
-            <h2 >AdminNosotros</h2>
-            <p>Aca tiene que ir una tabla</p>
-            <table class="table table-light">
-                <thead class="thead-light">       
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Email</th>
-                        <th>Mensaje</th>
-                        <th>Status</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for msg in msglist %}
-                    <tr>
-                        <td>{{msg[0]}}</td>
-                        <td>{{msg[1]}}</td>
-                        <td>{{msg[2]}}</td>
-                        <td>{{msg[3]}}</td>
-                        <td>{{msg[4]}}</td>
-                        
-                        <td><a class="btn btn-warning" href="/adminnosotros/editar/{{msg[0]}}">Editar</a> | <a class="btn btn-danger" href="/adminnosotros/destroy/{{msg[0]}}">Borrar</a> </td>
-                    </tr>
-                    {% endfor %}
-        
-                </tbody>
-            </table>
+            <h2 >Editar</h2>
+            <p>Aca tiene que ir los inputs edit</p>
+            {% for msg in msglist %}
+                <form class="formulario_contacto" method="post" action="/update" enctype="multipart/form-data">
+                
+                <label>ID:</label>
+                <input type="text" value="{{ msg[0] }}" name="IDs" id="IDs">
+                
+                <label>Nombre:</label>
+                <input type="text" value="{{ msg[1] }}" name="Nombre" id="Nombre">
+
+                <label>Email:</label>
+                <input type="text" value="{{ msg[2] }}" name="Email" id="Email">
+
+                <label>Mensaje:</label>
+                <input type="text" value="{{ msg[3] }}" name="Mensaje" id="Mensaje">
+                <label>Status</label>
+                <input type="text" value="{{ msg[4] }}" name="Status" id="Status">
+                <input type="submit" value="Agregar">
+                
+                </form>
+            {% endfor %}
+            
         </article>
       </section>
     </div> <!-- Fin contenedor -->
