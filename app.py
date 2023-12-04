@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 from flaskext.mysql import MySQL
 
 
 app=Flask(__name__)
+app._static_folder = "static"
+app.secret_key = "Hello_World"
 
 mysql = MySQL()
 app.config['MYSQL_DATABASE_HOST']='localhost'
@@ -78,7 +80,6 @@ def check():
     conn.commit()
     # Guardamos la data en resultado, si el query falla, no guarda nada.
     resultado = cursor.fetchall()
-
     # debug
     # print(datos)
 
@@ -86,6 +87,7 @@ def check():
     if resultado:
         # print debug para terminal
         print("Usuario y contraseña correcto")
+        session["checker"] = True
         return redirect("/adminnosotros")
     else:
         print("No encontro nada")
@@ -98,16 +100,20 @@ def check():
 
 
 
-@app.route("/adminnosotros")
+@app.route("/adminnosotros", methods=["GET"])
 def AdminNosotros():
-    sql = "SELECT * FROM tpocrud.msglist ;"
-    conn=mysql.connect()
-    cursor=conn.cursor()
-    cursor.execute(sql)
-    msglist=cursor.fetchall()
-    conn.commit()
-
-    return render_template("adminnosotros.html",msglist=msglist)
+    checker = session.get("checker", None)
+    if checker == True:
+        sql = "SELECT * FROM tpocrud.msglist ;"
+        conn=mysql.connect()
+        cursor=conn.cursor()
+        cursor.execute(sql)
+        msglist=cursor.fetchall()
+        conn.commit()
+        return render_template("adminnosotros.html",msglist=msglist)
+    else:
+        return render_template("Login.html", status="No ha iniciado sesion.")
+    
 
 @app.route("/adminnosotros/destroy/<int:id>")
 def destroy(id):
@@ -118,8 +124,10 @@ def destroy(id):
     conn.commit()
     return redirect("/adminnosotros")
 
-@app.route("/adminnosotros/editar/<int:id>")
+@app.route("/editar/<int:id>")
+
 def edit(id):
+
     sql = "SELECT * FROM tpocrud.msglist WHERE id=%s;"
     conn=mysql.connect()
     cursor=conn.cursor()
