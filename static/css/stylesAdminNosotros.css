@@ -228,6 +228,21 @@ img {
   margin: 0 auto;
 }
 
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
 /*          FOOTER          */
 
 
@@ -381,111 +396,6 @@ button{
     .nav {
       display: none;
     }
-
-    .AntecedentesGrid{
-      grid-area: AntecedentesGrid;
-      display: grid;
-      grid-template-columns: 0.05fr 0.90fr 0.05fr;
-      grid-template-rows: auto auto;
-      grid-auto-rows: minmax(100px, auto);
-      justify-items: center;
-      align-items: center;
-      grid-template-areas: 
-      ". AntTexto1 ."
-      ". AntIMG ."
-      ;
-    }
-    .AntIMG{
-      grid-area: AntIMG;
-      width: 31vw;
-      height: fit-content;
-      
-    }
-    .AntIMG img{
-      height: 30vw;
-    }
-    .AntTexto{
-      grid-area: AntTexto;
-    }
-    .SehnchsutIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .RosenrotIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .VolkerballIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .LiebeIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ". HIMG3 ."
-      ". HIMG4 ."
-      ;
-    }
-    .GermanyIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .AmerikaIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .ParisIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    .RammsteinIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ". HIMG3 ."
-      ". HIMG4 ."
-      ;
-    }
-    .ZeitIMG{
-      grid-template-columns:  0.05fr 0.90fr 0.05fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      ". HIMG1 ."
-      ". HIMG2 ."
-      ;
-    }
-    
-    
-
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
