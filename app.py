@@ -15,8 +15,10 @@ mysql.init_app(app)
 
 
 @app.route("/")
-
 def index():
+    return render_template("index.html")
+@app.route("/index")
+def indexOld():
     return render_template("index.html")
 
 @app.route("/discografia")
